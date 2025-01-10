@@ -6,7 +6,7 @@
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 08:41:19 by hkheired          #+#    #+#             */
-/*   Updated: 2024/12/31 14:39:45 by marvin           ###   ########.fr       */
+/*   Updated: 2025/01/06 05:30:29 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ void	ft_printmsg(t_data *data, int id, char *msg)
 	time = ft_get_time() - ft_get_start_time(data);
 	pthread_mutex_lock(&data->print_mt);
 	if (ft_keep_iter(data))
-		printf("%ld %d %s \n", time, id, msg);
+		printf("\033[0;33m%ld %d\033[0m %s \n", time, id, msg);
 	pthread_mutex_unlock(&data->print_mt);
 }
 

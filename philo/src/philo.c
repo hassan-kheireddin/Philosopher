@@ -6,7 +6,7 @@
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 08:20:10 by hkheired          #+#    #+#             */
-/*   Updated: 2024/12/31 15:13:11 by marvin           ###   ########.fr       */
+/*   Updated: 2025/01/06 05:35:38 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,6 +85,6 @@ int	main(int ac, char **av)
 	}
 	if (philosophers(ac, av) != 0)
 		return (2);
-	printf("\033[0;33mProgram End!\033[0m \n");
+	printf("\033[0;43mProgram End!\033[0m \n");
 	return (0);
 }

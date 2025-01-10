@@ -6,7 +6,7 @@
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 08:13:15 by hkheired          #+#    #+#             */
-/*   Updated: 2024/12/31 15:47:17 by marvin           ###   ########.fr       */
+/*   Updated: 2025/01/06 05:35:19 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -100,7 +100,7 @@ void	*ft_all_alive_routine(void *data_p)
 	{
 		if (ft_philo_died(&philos[i]) && ft_keep_iter(data))
 		{
-			ft_printmsg(data, philos[i].id, "died");
+			ft_printmsg(data, philos[i].id, "\033[0;44mdied\033[0m");
 			ft_set_keep_iterating(data, 0);
 			ft_notify_all_philos(data);
 			break ;
